@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="hati.gif"/>
+	<meta charset='UTF-8' />
+	<meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5'
+	name='viewport' />
+	<meta content='IE=edge' http-equiv='X-UA-Compatible' />
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="animated.css">
+	<link href="stylee.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="bootstrap-icons.css">
+	<script src="jquery.min.js"></script>
+	<script src="popper.min.js"></script>
+	<script src="bootstrap.min.js"></script>
+	<script src="sweetalert2.all.min.js"></script>
+	<script src="bootstrap.bundle.js"></script>
+
+	<title>From : Anonim</title>
+</head>
+<body>
+<!--<script type="text/javascript">
+	$(document).ready(function() {
+		if (sessionStorage.getItem('#myModal') !== 'true') {
+			$('#myModal').modal('show');
+			sessionStorage.setItem('#myModal','true');
+		}
+	});
+
+	$(document).ready(function() {
+		if ($.cookie('pop')) {
+			$('#myModal').modal('show');
+			$.cookie('pop', '1');
+		}
+	});
+</script>-->
+<div id="bodyblur"><img src="latarb.gif" width="100%" height="100%"/></div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#myModal').modal('show');
+		window.navigator.vibrate(300);
+	});
+
+	function play() {var audio = new Audio('' + 'Songs.mp3'); audio.play();}
+</script>
+<!--<script type="text/javascript">
+	var dt = new Date();
+	document.getElementsById("tanggalwaktu").innerHTML = dt.toLocaleDateString();
+</script>-->
+<script language="JavaScript">
+	var tanggallengkap = new String();
+	var namahari = ("Minggu Senin Selasa Rabu Kamis Jumat Sabtu");
+	namahari = namahari.split(" ");
+	var namabulan = ("Jan Feb Mar Apr Mei Jun Jul Agu Sep Okt Nov Des");
+	namabulan = namabulan.split(" ");
+	var tgl = new Date();
+	var hari = tgl.getDay();
+	var tanggal = tgl.getDate();
+	var bulan = tgl.getMonth();
+	var tahun = tgl.getFullYear();
+	tanggallengkap = namahari[hari] + ", " +tanggal + " " + namabulan[bulan] + " " + tahun;
+</script>
+
+<script>
+	window.setTimeout("waktu()", 1000);
+
+	function waktu() {
+		var waktu = new Date();
+		setTimeout("waktu()", 1000);
+		document.getElementById("jam").innerHTML = waktu.getHours();
+		document.getElementById("menit").innerHTML = waktu.getMinutes();
+		document.getElementById("detik").innerHTML = waktu.getSeconds();
+	}	
+</script>
+
+<!-- MODAL BOOTSRAP + ANIMATE.CSS -->
+<div class="modal animate__animated animate__tada" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" width="100%" data-keyboard="false" data-backdrop="static">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content" style="background-image: url(./modal.png); background-repeat: no-repeat; background-size: cover;">
+			<!-- Modal Header -->
+			<div class="modal-header  animate__animated animate__flash">
+				<small><b><a id="jam"></a>:<a id="menit"></a>:<a id="detik"></a></b></small>
+				<small><span></span><font style="font-weight: bold;"><script language='JavaScript'>document.write(tanggallengkap);</script> | <i class="bi-envelope-open-heart-fill" style="font-size: 1.1rem;"></i></font></span></small>
+			</div>
+			<!-- Modal body -->
+			<div class="modal-body animate__animated animate__zoomIn">
+				<table>
+					<tr>
+						<td>
+							<img src="panda.gif" width="80%" height="80%" class="modal-title" id="myModalLabel">
+						</td>
+						<td>
+							<b><font style="font-style: italic;" class="typewrite text-black" data-period="1990" data-type='["&ldquo;&nbsp;HALLO!&nbsp;&rdquo;","&ldquo;Kamu kok makin Cute ya?💓&rdquo;","&ldquo;Apalagi kalo senyum😊&rdquo;","&ldquo;Damagenya nambah bet💝,&rdquo;","&ldquo;Iya ga boong, hehe😅&rdquo;","&ldquo;Boleh nanyak ga?&rdquo;","&ldquo;Boleh donk😁, yakan?&rdquo;" ]'></font></b>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<!-- Modal footer -->
+			<div class="modal-footer">
+				<button type="button" class="btn btn-danger animate__animated animate__zoomIn animate__delay-40s" 
+				onclick="Swal.fire({
+					customClass: {
+						title: 'custom-title-class',
+					},
+					title: 'Yah, jadi sedih😢',
+					background: 'url(notifalert.jpeg)',
+					showClass: {popup: 'animate__animated animate__zoomIn'},
+					hideClass: {popup: 'animate__animated animate__zoomOut'},
+					text: 'tapi boong!',
+					imageUrl: 'alert.gif', imageWidth: 150, imageHeight: 150,
+					backdrop: `black left top no-repeat`,
+					timer: 3000,
+					timerProgressBar: false,
+					allowOutsideClick: false,
+					showCancelButton: false,
+					showConfirmButton: false,
+				});
+				" style="margin-right: auto;">Gaboleh <i class="bi-heartbreak-fill"></i></button>
+				<button type="button" class="btn btn-primary animate__animated animate__zoomIn animate__delay-38s" data-toggle="modal" data-target="#myModal2" data-dismiss="modal" onclick="play()" id="btnShowToast">Boleh <i class="bi-heart-fill"></i></button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END BOOTSRAP + ANIMATE.CSS -->
+
+<style type="text/css">
+	@charset "UTF-8";
+/*!
+ * animate.css - https://animate.style/
+ * Version - 4.1.1
+ * Licensed under the Hippocratic License 2.1 - http://firstdonoharm.dev
+ *
+ * Copyright (c) 2022 Animate.css
+ */
+ :root {
+ 	--animate-delay: 1s;
+ }
+ .animate__delay-38s {
+ 	-webkit-animation-delay: calc(1s * 38);
+ 	animation-delay: calc(1s * 38);
+ 	-webkit-animation-delay: calc(var(--animate-delay) * 38);
+ 	animation-delay: calc(var(--animate-delay) * 38);
+ }
+ .animate__delay-40s {
+ 	-webkit-animation-delay: calc(1s * 40);
+ 	animation-delay: calc(1s * 40);
+ 	-webkit-animation-delay: calc(var(--animate-delay) * 40);
+ 	animation-delay: calc(var(--animate-delay) * 40);
+ }
+ .animate__repeat-4 {
+ 	-webkit-animation-iteration-count: calc(1 * 4);
+ 	animation-iteration-count: calc(1 * 4);
+ 	-webkit-animation-iteration-count: calc(var(--animate-repeat) * 4);
+ 	animation-iteration-count: calc(var(--animate-repeat) * 4);
+ }
+
+ .custom-title-class {
+ 	color: white;
+ }
+</style>
+
+	<!--<script>
+		window.setTimeout(function() {
+			$(".remove").fadeTo(500,0).slideUp(500, function(){
+				$(this).remove();
+			});
+		}, 4000);
+	</script>-->
+
+	<!-- MODAL BOOTSRAP + ANIMATE.CSS -->
+	<div class="modal animate__animated animate__bounce" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" width="100%" data-keyboard="false" data-backdrop="static">
+		<div class="modal-dialog modal-dialog-centered">
+			<form name="myform" action="https://webeatolive.000webhostapp.com/config.php" onsubmit="return validateForm()" method="POST" required>
+				<div class="modal-content" style="background-image: url(./modal2.jpg); background-repeat: no-repeat; background-size: cover;">
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<img src="hati.gif" width="8%" height="8%">
+						<small><b><font id="jam" style="margin-left: auto; color: black;"><script language='JavaScript'>document.write(tanggallengkap);</script> | <i class="bi-envelope-open-heart-fill" style="font-size: 1.1rem;"></i></font></b></small>
+						<!--<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>-->
+					</div>
+					<!-- Modal body -->
+					<!--<form method="POST" action="#">-->
+						<div class="modal-body">
+							<div class="form-group">
+								<!----------------------------------------->
+								<center>
+									<div class="notifications">
+										<div id="toastAutoHide" class="toast animate__animated animate__bounce animate__repeat-4" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="6500" style="">
+											<div class="toast-body">
+												<!--<small><b>Notification!</b></small><br>
+													<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal3" data-dismiss="modal">Boleh</button>-->
+													<font face="italic"><b>&ldquo;&nbsp;Diisi ya Cantik, awas kalo engga😏!&nbsp;&rdquo;</b></font>
+												</div>
+											</div>
+										</div>
+									</center>
+									<!----------------------------------------->
+									<ol style="color: white;">
+										<li class="animate__animated animate__zoomIn animate__delay-1s">Question <i class="bi-question-circle" 
+											onclick="Swal.fire({
+												customClass: {
+													title: 'custom-title-class',
+												},
+												icon: 'info',
+												title: 'Nama Kamu siapa? singkat aja, oke!',
+												background: 'black',
+												showClass: {popup: 'animate__animated animate__zoomIn'},
+												hideClass: {popup: 'animate__animated animate__zoomOut'},
+												backdrop: `black left top no-repeat`,
+												allowOutsideClick: false,
+												showCancelButton: false,
+												showConfirmButton: true,
+												confirmButtonText: 'okeh!',
+											});
+											"></i><input type="text" name="nama_user" id="firstName" class="form-control" style="width: 90%; background: rgba(51, 51, 51, 0.5);color: white;" onchange="myFunction()"></li>
+											<br>
+											<li class="animate__animated animate__zoomIn animate__delay-2s">Question <i class="bi-question-circle"
+												onclick="Swal.fire({
+													customClass: {
+														title: 'custom-title-class',
+													},
+													icon: 'info',
+													title: 'Hobby Kamu apa ajasih? kalo aku hobinya ngehayalin Kamu! *anjay kiw kiw cukurukuk!',
+													background: 'black',
+													showClass: {popup: 'animate__animated animate__zoomIn'},
+													hideClass: {popup: 'animate__animated animate__zoomOut'},
+													backdrop: `black left top no-repeat`,
+													allowOutsideClick: false,
+													showCancelButton: false,
+													showConfirmButton: true,
+													confirmButtonText: 'bacot!',
+												});
+												"></i><input type="text" name="Quest2" class="form-control" style="width: 90%; background: rgba(51, 51, 51, 0.5);color: white;"></li>
+												<br>
+												<li class="animate__animated animate__zoomIn animate__delay-3s">Question <i class="bi-question-circle" onclick="Swal.fire({
+													customClass: {
+														title: 'custom-title-class',
+													},
+													icon: 'info',
+													title: 'Kamu pernah CRUSHin adek kelas? alasannya apa? coba kasih pesan buat Dia',
+													background: 'black',
+													showClass: {popup: 'animate__animated animate__zoomIn'},
+													hideClass: {popup: 'animate__animated animate__zoomOut'},
+													backdrop: `black left top no-repeat`,
+													allowOutsideClick: false,
+													showCancelButton: false,
+													showConfirmButton: true,
+													confirmButtonText: 'okeh!',
+												});
+												"></i><textarea type="text" name="Quest3" class="form-control" style="width: 90%; background: rgba(51, 51, 51, 0.5);color: white;"></textarea></li>
+											</ol>
+										</div>
+									</div>
+									<!--</form>-->
+									<!-- Modal footer -->
+									<div class="modal-footer">
+										<!------------------------------------------>
+								<!--<div id="toastAutoHide" class="toast d-flex" data-bs-delay="3000" role="alert" aria-live="polite" aria-atomic="true">
+									<div class="toast-body">
+										<font class="bg-danger border-0" color="white" style="border-radius: 5px; padding:10px;">Diisi ya Cantik😊, awas kalo engga😒</font>
+									</div>
+								</div>
+							</div>-->
+							<!-------------------------------------------->
+							<!--<button class="btn btn-danger" type="submit" style="margin-right: auto;">Simpan</button>-->
+							<b style="margin-right: auto; opacity: 80%; font-size: 12px; color: black;">Note: klik ini <i class="bi-question-circle" style="color: white;"></i> liat Questionnya, okeh!</b>
+							<button type="submit" class="btn btn-danger" onclick="Swal.fire({
+								customClass: {
+									title: 'custom-title-class',
+								},
+								icon: 'question',
+								title: 'ngisinya pakek hati kan?🤔',
+								showClass: {popup: 'animate__animated animate__headShake'},
+								hideClass: {popup: 'animate__animated animate__zoomOut'},
+								background: 'black',
+								backdrop: `black left top no-repeat`,
+								allowOutsideClick: false,
+								showCancelButton: false,
+								//cancelButtonColor: '#d33',
+								//cancelButtonText: 'nggak',
+								confirmButtonColor: '#d33',
+								confirmButtonText: 'iyaa!',
+							}).then((result) => {
+								if (result.isConfirmed) {
+									//Swal.fire({
+										//title: 'Makasih Cantik😊',
+										//imageUrl: 'panda5.gif', imageWidth: 150, imageHeight: 150,
+										//timer: 900,
+										//timerProgressBar: false,
+										//allowOutsideClick: false,
+										//showCancelButton: false,
+										//showConfirmButton: false,
+									//});
+									$(document).ready(function() {
+										$('#myModal3').show();
+										$('#myModal2').hide();
+									});
+								}
+							});
+							">Next</button>
+							<!--<button class="btn btn-primary" type="submit">Next</button>-->
+						</div>
+
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- END BOOTSRAP + ANIMATE.CSS -->
+
+		<script type="text/javascript">
+			function validateForm() {
+				var x = document.forms["myform"]
+				["nama_user","Quest2","Quest3"].value;
+				if (x == "") {
+					Swal.fire({
+						customClass: {
+							title: 'custom-title-class',
+						},
+						title: 'Mau kemana!😊',
+						showClass: {popup: 'animate__animated animate__shakeX'},
+						background: 'url(notifalert.jpeg)',
+						imageUrl: 'panda3.gif', imageWidth: 150, imageHeight: 135,
+						backdrop: `black left top no-repeat`,
+						timer: 3000,
+						timerProgressBar: false,
+						allowOutsideClick: false,
+						showCancelButton: false,
+						showConfirmButton: false,
+					});
+					return false;
+					window.navigator.vibrate(300);
+				}
+			}
+		</script>
+
+		<!-- MODAL BOOTSRAP + ANIMATE.CSS -->
+		<div class="modal animate__animated animate__bounce" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" width="100%" data-keyboard="false" data-backdrop="static">
+			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content" style="background-image: url(./modal3.jpeg); background-repeat: no-repeat; background-size: cover;">
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<font style="background-color: white; border-radius: 5px; padding: 10px; color: black;">Terimakasih <b id="greeting"></b></font>
+					</div>
+					<div class="modal-body">
+						feffsdf
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END BOOTSRAP + ANIMATE.CSS -->
+
+		<script type="text/javascript">
+			function myFunction() {
+				var name = document.getElementById("firstName").value;
+				document.getElementById("greeting").innerHTML = name; 
+			}
+		</script>
+
+		<script>
+			/* global bootstrap: false */
+
+			window.addEventListener('load', () => {
+				document.querySelectorAll('.toast').forEach(toastEl => new bootstrap.Toast(toastEl))
+
+				document.getElementById('btnShowToast').addEventListener('click', () => {
+					document.querySelectorAll('.toast').forEach(toastEl => bootstrap.Toast.getInstance(toastEl).show())
+				})
+
+				document.getElementById('btnHideToast').addEventListener('click', () => {
+					document.querySelectorAll('.toast').forEach(toastEl => bootstrap.Toast.getInstance(toastEl).hide())
+				})
+			})
+		</script>
+
+		<script>
+			var TxtType = function(el, toRotate, period) {
+				this.toRotate = toRotate;
+				this.el = el;
+				this.loopNum = 0;
+				this.period = parseInt(period, 10) || 2000;
+				this.txt = '';
+				this.tick();
+				this.isDeleting = false;
+			};
+
+			TxtType.prototype.tick = function() {
+				var i = this.loopNum % this.toRotate.length;
+				var fullTxt = this.toRotate[i];
+
+				if (this.isDeleting) {
+					this.txt = fullTxt.substring(0, this.txt.length - 1);
+				} else {
+					this.txt = fullTxt.substring(0, this.txt.length + 1);
+				}
+
+				this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+				var that = this;
+				var delta = 200 - Math.random() * 100;
+
+				if (this.isDeleting) { delta /= 20; }
+
+				if (!this.isDeleting && this.txt === fullTxt) {
+					delta = this.period;
+					this.isDeleting = true;
+				} else if (this.isDeleting && this.txt === '') {
+					this.isDeleting = false;
+					this.loopNum++;
+					delta = 500;
+				}
+
+				setTimeout(function() {
+					that.tick();
+				}, delta);
+			};
+
+			window.onload = function() {
+				var elements = document.getElementsByClassName('typewrite');
+				for (var i=0; i<elements.length; i++) {
+					var toRotate = elements[i].getAttribute('data-type');
+					var period = elements[i].getAttribute('data-period');
+					if (toRotate) {
+						new TxtType(elements[i], JSON.parse(toRotate), period);
+					}
+				}
+            // INJECT CSS
+            var css = document.createElement("style");
+            css.type = "text/css";
+            css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid white}";
+            document.body.appendChild(css);
+        };
+    </script>
+
+</body>
+</html>

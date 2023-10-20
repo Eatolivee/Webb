@@ -1,0 +1,6 @@
+body{background-color:#101010;}
+#bodyblur{display:block;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.3);z-index:-1;transition:all 1s ease;-webkit-backdrop-filter:blur(6px); backdrop-filter:blur(6px);}
+@keyframes jj{0%  {opacity:.8} 50% {opacity:.84} 100% {opacity:.8}}
+#bodyblur img{animation-name:jj;animation-duration: 3s;animation-iteration-count: infinite;}
+
+body::before{content:"from:n";font-style: 'Ubuntu', sans-serif;color:white;font-size:4vw;position:fixed;bottom:25px;left:25px;}
