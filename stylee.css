@@ -1,0 +1,10 @@
+body{background-color:#101010;}
+#bodyblur{display:block;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.3);z-index:-1;transition:all 1s ease;-webkit-backdrop-filter:blur(6px); backdrop-filter:blur(6px);}
+@keyframes jj{0%  {opacity:.8} 50% {opacity:.84} 100% {opacity:.8}}
+#bodyblur img{animation-name:jj;animation-duration: 3s;animation-iteration-count: infinite;}
+
+body::before{content:"from:n";font-style: 'Ubuntu', sans-serif;color:white;font-size:4vw;position:fixed;bottom:25px;left:25px;}
+
+@keyframes kont{0%  {left:-2px; top:0;} 50% {left:2px; top:0px;} 100% {left:-2px; top:0px;}}
+blockquote{animation-name:kont;animation-duration: 3s;animation-iteration-count: infinite;position:relative;opacity:.8;margin-left:0;margin-right:0; padding:30px 25px;}
+blockquote{background:rgba(0, 0, 0, .45);color:#fefefe;font-size:16px;padding:30px 40px 30px 40px; border: .7px solid transparent;border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);border-image-slice: 1;}
