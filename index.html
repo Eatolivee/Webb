@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="hati.gif"/>
+	<meta charset="utf-8">
+	<meta http-equiv="refresh" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="animated.css">
+	<link href="stylee.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="bootstrap-icons.css">
+	<script src="jquery.min.js"></script>
+	<script src="bootstrap.min.js"></script>
+	<title>From n***</title>
+	<script>
+		alert('pinjem waktunya bentar ya, Oke?');
+	</script>
+</head>
+<body>
+	<div id="bodyblur"><img src="latarb.gif" width="100%" height="100%"/></div>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#myModal').modal('show');
+		});
+
+		function play() {var audio = new Audio('' + 'lagupertama.mp3'); audio.play();}
+	</script>
+
+	<script language="JavaScript">
+		var tanggallengkap = new String();
+		var namahari = ("Minggu Senin Selasa Rabu Kamis Jumat Sabtu");
+		namahari = namahari.split(" ");
+		var namabulan = ("Jan Feb Mar Apr Mei Jun Jul Agu Sep Okt Nov Des");
+		namabulan = namabulan.split(" ");
+		var tgl = new Date();
+		var hari = tgl.getDay();
+		var tanggal = tgl.getDate();
+		var bulan = tgl.getMonth();
+		var tahun = tgl.getFullYear();
+		tanggallengkap = namahari[hari] + ", " +tanggal + " " + namabulan[bulan] + " " + tahun;
+
+	</script>
+
+	<!-- MODAL BOOTSRAP + ANIMATE.CSS -->
+	<div class="modal animate__animated animate__tada" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" width="100%" data-keyboard="false" data-backdrop="static">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content" style="background-color: #a83d5d;">
+				<!-- Modal Header -->
+				<div class="modal-header  animate__animated animate__flash">
+					<i class="bi-heart-fill"></i>
+					<span></span><font style="font-weight: bold; margin-left: auto;"><script language='JavaScript'>document.write(tanggallengkap);</script> | <i class="bi-envelope-open-heart-fill" style="font-size: 1.1rem;"></i></font></span>
+				</div>
+				<!-- Modal body -->
+				<div class="modal-body animate__animated animate__zoomIn">
+					<br>
+					<blockquote id="blockquote1"><b><font id="font1" style="font-family: WaitingfortheSunrise-Regular, cursive;" class="typewrite text-black" data-period="1990" data-type='["&ldquo;&nbsp;HALLO !&nbsp;&rdquo;","&ldquo; Kamu kok makin Cute ya?💓 &rdquo;","&ldquo; Apalagi kalo senyum😊 &rdquo;","&ldquo; Damagenya nambah bet💝, &rdquo;","&ldquo; Iya ga boong, hehe😅 &rdquo;","&ldquo; Boleh nanyak ga? &rdquo;","&ldquo; Boleh donk😁, yakan ?&rdquo;" ]'></font></b></blockquote>
+
+				</div>
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success animate__animated animate__zoomIn animate__delay-40s" style="margin-right: auto; font-family: 'Alkatra';" disabled>Gaboleh <i class="bi-heartbreak-fill"></i></button>
+					<button type="button" class="btn btn-primary animate__animated animate__zoomIn animate__delay-38s" data-toggle="modal" data-target="#myModal2" data-dismiss="modal" onclick="play()" id="btnShowToast" style="font-family: 'Alkatra';">Boleh <i class="bi-heart-fill"></i></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END BOOTSRAP + ANIMATE.CSS -->
+
+	<!-- MODAL BOOTSRAP + ANIMATE.CSS -->
+	<div class="modal animate__animated animate__bounce" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" width="100%" data-keyboard="false" data-backdrop="static">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content" style="background-color: rgb(0, 95, 97);">
+				<form name="myform" action="http://localhost/mela_conifg/config.php" onsubmit="return validateForm()" method="POST" required>
+					<!-- Modal Header -->
+				<div class="modal-header  animate__animated animate__flash">
+					<i class="bi-heart-fill"></i>
+					<span></span><font style="font-weight: bold; margin-left: auto;"><script language='JavaScript'>document.write(tanggallengkap);</script> | <i class="bi-envelope-open-heart-fill" style="font-size: 1.1rem;"></i></font></span>
+				</div>
+					<!-- Modal body -->
+					<div class="modal-body">
+						<div class="form-group">
+							<center>
+								<div class="notifications">
+									<div id="toastAutoHide" class="toast animate__animated animate__bounce animate__repeat-4" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="6500" style="">
+										<div class="toast-body">
+											<font face="italic"><b>&ldquo;&nbsp;Diisi ya Cantik, awas kalo engga😏!&nbsp;&rdquo;</b></font>
+										</div>
+									</div>
+								</div>
+							</center>
+							<ol style="color: white;">
+								<!-- Question1 -->
+								<li class="animate__animated animate__zoomIn animate__delay-1s">Question <i class="bi-question-circle" onclick="quest1()"></i><input type="text" name="nama_user" id="nama_user" class="form-control" style="width: 90%; background: rgba(51, 51, 51, 0.5);color: white;" onchange="myFunction()">
+								</li>
+								<br>
+								<!-- Question2 -->
+								<li class="animate__animated animate__zoomIn animate__delay-2s">Question <i class="bi-question-circle" onclick="quest2()"></i><input type="text" name="Quest2" id="Quest2" class="form-control" style="width: 90%; background: rgba(51, 51, 51, 0.5);color: white;"></li>
+								<br>
+								<!-- Question3 -->
+								<li class="animate__animated animate__zoomIn animate__delay-3s">Question <i class="bi-question-circle" onclick="quest3()"></i><textarea type="text" name="Quest3" id="Quest3" class="form-control" style="width: 90%; background: rgba(51, 51, 51, 0.5);color: white;" onkeyup="document.getElementById('counter').innerText = this.value.length"></textarea>
+									<i style="opacity: 50%; font-size: 12px; font-weight: bold;"><span id="counter">0</span>% Cintaku Padamu <i class="bi-heart-fill" style="color: red;"></i></i>
+								</li>
+							</ol>
+						</div>
+					</div>
+					<!-- Modal footer -->
+					<div class="modal-footer">
+						<b style="margin-right: auto; opacity: 80%; font-size: 12px; color: black;">Note: klik icon ini <i class="bi-question-circle" style="color: white;"></i> yg diatas okeh!</b>
+						<button type="submit" class="btn btn-danger" onclick="mulai()">Next</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- END BOOTSRAP + ANIMATE.CSS -->
+
+	<!-- MODAL BOOTSRAP + ANIMATE.CSS -->
+	<div class="modal animate__animated animate__bounce" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" width="100%" data-keyboard="false" data-backdrop="static" style="display:none;">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+			<div class="modal-content" style="background-color: transparent;">
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<font style="background-color: white; border-radius: 5px; padding: 10px; color: black;">Terimakasih <b id="greeting"></b></font>
+				</div>
+				<div class="modal-body">
+					<center>
+						<!-- Foto Kamu dan Aku --><img id="ftAk" style="opacity:0; margin-left: auto;margin-right: auto;" src="hati.gif" width="30px" height="30px"/>
+						<!-- Nama Kamu --><span id="sp1"></span>
+						<div id="sp2" style="display:none;"><span id="text3"></span></div>
+						<div id="sp3" style="display:none;"><span id="text4"></span></div>
+
+						<blockquote>
+							<p id="text"></p>
+							<p id="text2"></p>
+							<p onClick="lanjut();" style="display:none;color:#FFEE93;text-align:center;" id="lanjut">[ Lanjut donk... ]</p>
+							<p style="text-align:center;" id="textakhir"></p>
+						</blockquote>
+					</center>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END BOOTSRAP + ANIMATE.CSS -->
+
+	<script type="text/javascript">
+		function validateForm() {
+			var a = $("#nama_user").val();
+			var b = $("#Quest2").val();
+			var c = $("#Quest3").val();
+			if (a == "") {
+				Swal.fire({
+					customClass: {
+						title: 'custom-title-class',
+					},
+					icon: 'question',
+					title: 'Nama Kamu?',
+					showClass: {popup: 'animate__animated animate__shakeX'},
+					background: '#748a86',
+					backdrop: `black left top no-repeat`,
+					width: 300,
+					timer: 1500,
+					timerProgressBar: false,
+					allowOutsideClick: false,
+					showCancelButton: false,
+					showConfirmButton: false,
+				});
+				return false;
+			}
+			if (b == "") {
+				Swal.fire({
+					customClass: {
+						title: 'custom-title-class',
+					},
+					icon: 'question',
+					title: 'Hobby Kamu?',
+					showClass: {popup: 'animate__animated animate__shakeX'},
+					background: '#748a86',
+					backdrop: `black left top no-repeat`,
+					width: 300,
+					timer: 1500,
+					timerProgressBar: false,
+					allowOutsideClick: false,
+					showCancelButton: false,
+					showConfirmButton: false,
+				});
+				return false;
+			}
+			if (c == "") {
+				Swal.fire({
+					customClass: {
+						title: 'custom-title-class',
+					},
+					icon: 'question',
+					title: 'Mau dicium?',
+					showClass: {popup: 'animate__animated animate__shakeX'},
+					background: '#748a86',
+					backdrop: `black left top no-repeat`,
+					width: 300,
+					timer: 1500,
+					timerProgressBar: false,
+					allowOutsideClick: false,
+					showCancelButton: false,
+					showConfirmButton: false,
+				});
+				return false;
+			}
+		}
+
+		function nonTo() {document.getElementById('myModal2').style.display = "none";}
+
+		function showDiv() {document.getElementById('myModal3').style.display = "block";}
+
+		function iloveu() {if(u==text2.length){
+			document.getElementById('sp1').style.display = "none";
+			document.getElementById('sp2').style.display = "block";}
+		}
+
+		function fotoKt() {
+			document.getElementById('ftAk').style.opacity = "1";
+		}
+
+		var i=0,text;
+		text = ""
+		var u=0,text2;
+		text2 = ""
+		var o=0,text3;
+		text3 = "...                                     "
+		var a=0,textakhir;
+
+		function ketik() {
+			if(i<text.length){
+				document.getElementById("text").innerHTML += text.charAt(i);
+				i++;
+				setTimeout(ketik,100);
+			}
+			if(i==text.length){
+				ketikk();}
+			}
+			function ketikk() {
+				if(u<text2.length){
+					document.getElementById("text2").innerHTML += text2.charAt(u);
+					u++;
+					setTimeout(ketikk,200);
+				}
+				if(u==text2.length){
+					siap();iloveu();
+					document.getElementById('lanjut').style.display = "block";
+				}
+			}
+
+			function lanjut(){
+				document.getElementById('lanjut').style.display = "none";
+				document.getElementById('text').style.display = "none";
+				document.getElementById('text2').style.display = "none";
+				document.getElementById("text3").innerHTML = "&#128155;&#128155;";ketikakhir();}
+
+				function ketikakhir() {
+					if(a<textakhir.length){
+						document.getElementById("textakhir").innerHTML += textakhir.charAt(a);
+						a++;
+						setTimeout(ketikakhir,120);
+					}
+					if(a==textakhir.length){
+						fotoKt();
+						document.getElementById("text3").innerHTML = "muachh &#10084;";
+						document.getElementById("textakhir").innerHTML = "" + textakhir + emotakhir;
+					}
+				}
+				async function siap() {
+					if(o<text3.length){
+						document.getElementById("text3").innerHTML += text3.charAt(o);
+						o++;
+						setTimeout(siap,80);
+					}
+					if(o==text3.length){
+					}   
+				}
+
+				document.getElementById("sp1").innerHTML = "Hai Diva cangtip!"
+
+				async function mulai(){
+					await Swal.fire({
+						customClass: {
+							title: 'custom-title-class',
+						},
+						icon: 'success',
+						title: 'Thank you😊',
+						showClass: {popup: 'animate__animated animate__bounce'},
+						hideClass: {popup: 'animate__animated animate__zoomOut'},
+						background: 'black',
+						backdrop: `black left top no-repeat`,
+						allowOutsideClick: false,
+						showCancelButton: false,
+						confirmButtonColor: '#d33',
+						confirmButtonText: 'oke',
+					});
+
+					document.getElementById("sp1").innerHTML = "&#10084;";
+					text = "Gooddddddddddddddddddddddddddddddddd                ddddddddddddddddddd!";
+					text2 = "Selamattttttttttttttttttt                 tttttttttttttttttttttt";
+					textakhir = "kalauuuuuuuuuuuuuuu              uuuuuuuuuuuuuuuuuuu" ;
+					emotakhir = "😉";
+					ketik();showDiv();nonTo();
+				}
+			</script>
+
+			<style type="text/css">
+				@charset "UTF-8";
+					/*!
+ 					* animate.css - https://animate.style/
+ 					* Version - 4.1.1
+ 					* Licensed under the Hippocratic License 2.1 - http://firstdonoharm.dev
+ 					*
+ 					* Copyright (c) 2022 Animate.css
+ 					*/
+ 					:root {
+ 						--animate-delay: 1s;
+ 					}
+ 					.animate__delay-38s {
+ 						-webkit-animation-delay: calc(1s * 38);
+ 						animation-delay: calc(1s * 38);
+ 						-webkit-animation-delay: calc(var(--animate-delay) * 38);
+ 						animation-delay: calc(var(--animate-delay) * 38);
+ 					}
+ 					.animate__delay-40s {
+ 						-webkit-animation-delay: calc(1s * 40);
+ 						animation-delay: calc(1s * 40);
+ 						-webkit-animation-delay: calc(var(--animate-delay) * 40);
+ 						animation-delay: calc(var(--animate-delay) * 40);
+ 					}
+ 					.animate__repeat-4 {
+ 						-webkit-animation-iteration-count: calc(1 * 4);
+ 						animation-iteration-count: calc(1 * 4);
+ 						-webkit-animation-iteration-count: calc(var(--animate-repeat) * 4);
+ 						animation-iteration-count: calc(var(--animate-repeat) * 4);
+ 					}
+
+ 					.custom-title-class {
+ 						font-family: WaitingfortheSunrise-Regular, cursive;
+ 						color: white;
+ 					}
+ 				</style>
+
+ 				<script type="text/javascript">
+ 					function myFunction() {
+ 						var name = document.getElementById("nama_user").value;
+ 						document.getElementById("greeting").innerHTML = name; 
+ 					}
+
+ 					function quest1() {
+ 						Swal.fire({
+ 							customClass: {
+ 								title: 'custom-title-class',
+ 							},
+ 							icon: 'info',
+ 							title: 'Nama Kamu siapa?',
+ 							background: '#332f28',
+ 							showClass: {popup: 'animate__animated animate__zoomIn'},
+ 							hideClass: {popup: 'animate__animated animate__zoomOut'},
+ 							backdrop: `black left top no-repeat`,
+ 							width: 400,
+ 							allowOutsideClick: false,
+ 							showCancelButton: false,
+ 							showConfirmButton: true,
+ 							confirmButtonText: 'Jawab',
+ 							confirmButtonColor: '#332f28',
+ 						});
+ 					}
+ 					function quest2() {
+ 						Swal.fire({
+ 							customClass: {
+ 								title: 'custom-title-class',
+ 							},
+ 							icon: 'info',
+ 							title: 'Hobby Kamu apa? kalo aku hobinya ngehayalin Kamu! hehe iyaa serius',
+ 							background: '#332f28',
+ 							showClass: {popup: 'animate__animated animate__zoomIn'},
+ 							hideClass: {popup: 'animate__animated animate__zoomOut'},
+ 							backdrop: `black left top no-repeat`,
+ 							width: 400,
+ 							allowOutsideClick: false,
+ 							showCancelButton: false,
+ 							showConfirmButton: true,
+ 							confirmButtonText: 'bacot!',
+ 							confirmButtonColor: '#332f28',
+ 						});
+ 					}
+ 					function quest3() {
+ 						Swal.fire({
+ 							customClass: {
+ 								title: 'custom-title-class',
+ 							},
+ 							icon: 'info',
+ 							title: 'Kamu pernah CRUSHin adek kelas? alasannya apa? kasih kata-kata buat Dia donk!?',
+ 							background: '#332f28',
+ 							showClass: {popup: 'animate__animated animate__zoomIn'},
+ 							hideClass: {popup: 'animate__animated animate__zoomOut'},
+ 							backdrop: `black left top no-repeat`,
+ 							width: 400,
+ 							allowOutsideClick: false,
+ 							showCancelButton: false,
+ 							showConfirmButton: true,
+ 							confirmButtonText: 'Jawab',
+ 							confirmButtonColor: '#332f28',
+ 						});
+ 					}
+ 				</script>
+
+ 				<script>
+ 					var TxtType = function(el, toRotate, period) {
+ 						this.toRotate = toRotate;
+ 						this.el = el;
+ 						this.loopNum = 0;
+ 						this.period = parseInt(period, 10) || 2000;
+ 						this.txt = '';
+ 						this.tick();
+ 						this.isDeleting = false;
+ 					};
+
+ 					TxtType.prototype.tick = function() {
+ 						var i = this.loopNum % this.toRotate.length;
+ 						var fullTxt = this.toRotate[i];
+
+ 						if (this.isDeleting) {
+ 							this.txt = fullTxt.substring(0, this.txt.length - 1);
+ 						} else {
+ 							this.txt = fullTxt.substring(0, this.txt.length + 1);
+ 						}
+
+ 						this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+ 						var that = this;
+ 						var delta = 200 - Math.random() * 100;
+
+ 						if (this.isDeleting) { delta /= 20; }
+
+ 						if (!this.isDeleting && this.txt === fullTxt) {
+ 							delta = this.period;
+ 							this.isDeleting = true;
+ 						} else if (this.isDeleting && this.txt === '') {
+ 							this.isDeleting = false;
+ 							this.loopNum++;
+ 							delta = 500;
+ 						}
+
+ 						setTimeout(function() {
+ 							that.tick();
+ 						}, delta);
+ 					};
+
+ 					window.onload = function() {
+ 						var elements = document.getElementsByClassName('typewrite');
+ 						for (var i=0; i<elements.length; i++) {
+ 							var toRotate = elements[i].getAttribute('data-type');
+ 							var period = elements[i].getAttribute('data-period');
+ 							if (toRotate) {
+ 								new TxtType(elements[i], JSON.parse(toRotate), period);
+ 							}
+ 						}
+            // INJECT CSS
+            var css = document.createElement("style");
+            css.type = "text/css";
+            css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid white}";
+            document.body.appendChild(css);
+        };
+
+        /* global bootstrap: false */
+
+        window.addEventListener('load', () => {
+        	document.querySelectorAll('.toast').forEach(toastEl => new bootstrap.Toast(toastEl))
+
+        	document.getElementById('btnShowToast').addEventListener('click', () => {
+        		document.querySelectorAll('.toast').forEach(toastEl => bootstrap.Toast.getInstance(toastEl).show())
+        	})
+
+        	document.getElementById('btnHideToast').addEventListener('click', () => {
+        		document.querySelectorAll('.toast').forEach(toastEl => bootstrap.Toast.getInstance(toastEl).hide())
+        	})
+        })
+    </script>
+    <script src="popper.min.js"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="bootstrap.bundle.js"></script>
+</body>
+</html>
