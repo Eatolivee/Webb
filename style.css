@@ -1,0 +1,25 @@
+body::before{content:"Bang\01F986";font-family: 'CaveatBrush-Regular'; color:white;font-size:4vw;position:fixed;bottom:25px;left:25px;}
+
+@font-face{
+	font-family: 'CaveatBrush-Regular';
+	src: url('CaveatBrush-Regular.ttf');
+	src: url('CaveatBrush-Regular.ttf') format('ttf');
+	src: url('CaveatBrush-Regular.ttf') format('truetype');
+}
+
+.Alkatra{
+	font-family: 'Alkatra';
+	src: url('Alkatra-Bold.ttf');
+	src: url('Alkatra-Bold.ttf') format('ttf');
+	src: url('Alkatra-Bold.ttf') format('truetype');
+}
+
+button{font-family: Alkatra, cursive;}
+@keyframes kont{0%  {left:-2px; top:0;} 50% {left:2px; top:0px;} 100% {left:-2px; top:0px;}}
+blockquote{animation-name:kont;animation-duration: 3s;animation-iteration-count: infinite;position:relative;opacity:.8;margin-left:0;margin-right:0; padding:30px 25px;}
+blockquote{background:rgba(0, 0, 0, .45);color:#fefefe;font-size:16px;padding:30px 40px 30px 40px; border: .7px solid transparent;border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);border-image-slice: 1;}
+.text-justify {text-align: justify;}
+.line {line-height: 125%;}
+h1{font-family: 'Julius Sans One', sans-serif; margin-bottom: 5px;}
+hr{border: 1px solid white; margin-top: 1px; opacity: 50%;}
+p{font-family: 'CaveatBrush-Regular';}
