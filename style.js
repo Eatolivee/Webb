@@ -84,11 +84,11 @@ function ketik() {
 			background: 'black',
 			backdrop: `black left top no-repeat`,
 			width: 300,
-			timer: 1500,
+			//timer: 1500,
 			timerProgressBar: false,
 			allowOutsideClick: false,
 			showCancelButton: false,
-			showConfirmButton: false,
+			showConfirmButton: true,
 		});
 
 		var name = document.getElementById("nama_user");
